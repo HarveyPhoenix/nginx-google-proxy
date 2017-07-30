@@ -7,7 +7,8 @@ server {
     location / {
         google on;
         google_scholar on;
-        google_language "en";
+        ## config refer https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.md
+        google_language "zh-TW";
     }
 
     error_page   500 502 503 504  /50x.html;
